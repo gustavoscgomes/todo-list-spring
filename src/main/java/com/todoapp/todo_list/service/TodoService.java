@@ -19,7 +19,7 @@ public class TodoService {
         return list();
     }
     public List<Todo> list() {
-        Sort sort = Sort.by("prioridade").descending().and(Sort.by("name"));
+        Sort sort = Sort.by("prioridade").descending().and(Sort.by("nome"));
         return repository.findAll(sort);
     }
     public List<Todo> update(Todo todo) {
