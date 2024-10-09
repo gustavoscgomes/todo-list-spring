@@ -26,7 +26,7 @@ public class TodoController {
         return service.list();
     }
     
-    @PostMapping
+    @PutMapping
     public List<Todo> update(@RequestBody Todo todo) {
         return service.create(todo);
     }
